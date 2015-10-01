@@ -1,0 +1,32 @@
+{
+  "name": "awesome-angular-swipe",
+  "version": "0.0.0",
+  "authors": [
+    "Linagora folks"
+  ],
+  "description": "This library uses interact.js then exposes an angular directive which allows mobile swipe feature on everything in the DOM.",
+  "main": "dist/awesome-swipe.min.js",
+  "keywords": [
+    "swipe",
+    "awesomepaas",
+    "angularjs"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/linagora/awesome-angular-swipe.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "jquery": "~2.1.4",
+    "interact": "~1.2.5"
+  },
+  "devDependencies": {
+    "chai": "~3.3.0",
+    "angular-mocks": "~1.4.7"
+  }
+}
