@@ -92,6 +92,23 @@ module.exports = function(grunt) {
       }
     },
 
+    less: {
+      release: {
+        files: {
+          'dist/awesome-angular-swipe.css': 'less/awesome-angular-swipe.less'
+        }
+      },
+      'release-compress': {
+        files: {
+          'dist/awesome-angular-swipe.min.css': 'less/awesome-angular-swipe.less'
+        },
+        options: {
+          compress: true,
+          ieCompat: false
+        }
+      }
+    },
+
     release: {
       options: {
         file: 'package.json',
@@ -107,7 +124,7 @@ module.exports = function(grunt) {
   });
 
   require('load-grunt-tasks')(grunt);
-  grunt.registerTask('compile', ['clean:dist', 'uglify']);
+  grunt.registerTask('compile', ['clean:dist', 'uglify', 'less:release', 'less:release-compress']);
   grunt.registerTask('dist', ['test']);
   grunt.registerTask('linters', 'Check code for lint', ['jshint:all', 'jscs:lint', 'lint_pattern:all']);
   grunt.registerTask('test', 'Lint, compile and launch test suite', ['linters', 'compile', 'karma']);
