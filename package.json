@@ -1,6 +1,6 @@
 {
   "name": "awesome-angular-swipe",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This library uses interact.js then exposes a directive which allows mobile swipe feature on everything in the DOM.",
   "main": "lib/awesome-angular-swipe.js",
   "directories": {
