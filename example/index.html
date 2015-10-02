@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport", content="width=device-width, initial-scale=1">
+  <title>Awesome angular swipe</title>
+  <link rel="stylesheet" href="../dist/awesome-angular-swipe.css">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="materialdesignicons.min.css" rel="stylesheet">
+  <link href="app.css" rel="stylesheet">
+</head>
+<body ng-app="swipe.example">
+  <div class="col-xs-12">
+    <h3> Awesome angular swipe </h3>
+    <hr/>
+  <div/>
+  <div class="col-xs-12"  ng-controller="swipeCtrl">
+    <div>
+      <div class="panel panel-default">
+        <div class="panel-body swipe" swipe-left="onSwipeLeft" swipe-right="onSwipeRight">
+          Swipe left or right this beautiful panel!
+        </div>
+      </div>
+      <p>
+        {{swipeAction}}
+      </p>
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <hr/>
+  </div>
+  <div class="col-xs-12" ng-controller="fancySwipeCtrl">
+    <div>
+      <div class="panel panel-default custom-swipe">
+        <div class="panel-body swipe" swipe-left="delayedClose" swipe-right="delayedClose" icon-left="mdi-calendar" icon-right="mdi-plus">
+          Again with some fancy customization!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/interact/interact.min.js"></script>
+  <script src="../bower_components/re-tree/re-tree.min.js"></script>
+  <script src="../bower_components/ng-device-detector/ng-device-detector.min.js"></script>
+  <script src="../lib/awesome-angular-swipe.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

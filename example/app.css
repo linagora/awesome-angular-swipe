@@ -1,0 +1,15 @@
+.custom-swipe .option.right {
+  background-color: blue;
+}
+
+.custom-swipe .option.left  {
+  background-color: red;
+}
+
+.all-centered {
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
