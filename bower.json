@@ -23,7 +23,8 @@
   "dependencies": {
     "angular": "~1.4.7",
     "jquery": "~2.1.4",
-    "interact": "~1.2.5"
+    "interact": "~1.2.5",
+    "ng-device-detector": "~1.1.7"
   },
   "devDependencies": {
     "chai": "~3.3.0",
