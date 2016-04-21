@@ -1,6 +1,7 @@
 .swipe-wrapper {
   position: relative;
   overflow: hidden;
+  display: block;
 }
 .swipe-wrapper .appear {
   opacity: 1;
