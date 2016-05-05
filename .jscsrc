@@ -5,5 +5,7 @@
 	"disallowMultipleVarDecl": null,
 	"requirePaddingNewLinesBeforeLineComments": null,
 	"safeContextKeyword": ["self"],
-	"requireCamelCaseOrUpperCaseIdentifiers": null
+	"requireCamelCaseOrUpperCaseIdentifiers": null,
+	"requireSpacesInAnonymousFunctionExpression": null,
+	"maximumLineLength": null
 }
