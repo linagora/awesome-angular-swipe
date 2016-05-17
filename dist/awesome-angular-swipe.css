@@ -33,6 +33,7 @@
 }
 .swipe-wrapper .option {
   position: absolute;
+  display: none;
   height: 100%;
   width: 100%;
   top: 0;
