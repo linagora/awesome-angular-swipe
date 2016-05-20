@@ -21,8 +21,8 @@
     </p>
     <br/>
     <div>
-      <div class="panel panel-default">
-        <div class="panel-body swipe" swipe-left="onSwipeLeft" swipe-right="onSwipeRight">
+      <div class="panel panel-default swipe" swipe-left="onSwipeLeft" swipe-right="onSwipeRight">
+        <div class="panel-body">
           Swipe left or right this beautiful panel!
         </div>
       </div>
@@ -36,9 +36,9 @@
   </div>
   <div class="col-xs-12" ng-controller="fancySwipeCtrl">
     <div>
-      <div class="panel panel-default custom-swipe">
-        <div class="panel-body swipe" swipe-left="delayedClose" swipe-right="delayedClose" icon-left="mdi-calendar" icon-right="mdi-plus">
-          Again with some fancy customization!
+      <div class="panel panel-default swipe" swipe-left="delayedClose" swipe-right="delayedClose" left-template="leftTemplate.html" right-template="rightTemplate.html">
+        <div class="panel-body">
+          Again with some template customization!
         </div>
       </div>
     </div>
