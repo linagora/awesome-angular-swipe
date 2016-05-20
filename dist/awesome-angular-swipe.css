@@ -46,10 +46,11 @@
   padding: 5px;
 }
 .swipe-wrapper .option .option-item i {
-  font-size: 40px;
+  font-size: 35px;
+  margin: 0 10px;
 }
 .swipe-wrapper .option.right {
-  background-color: #ffc266;
+  background-color: #FFC107;
 }
 .swipe-wrapper .option.right .option-item {
   display: flex;
@@ -59,7 +60,7 @@
   align-items: center;
 }
 .swipe-wrapper .option.left {
-  background-color: #92cf94;
+  background-color: #4CAF50;
 }
 .swipe-wrapper .option.left .option-item {
   display: flex;
