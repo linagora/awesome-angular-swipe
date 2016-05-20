@@ -13,11 +13,15 @@
     }
 
     $scope.onSwipeLeft = function() {
-      $scope.swipeAction = 'swipe left';
+      $scope.$apply(function() {
+        $scope.swipeAction = 'swipe left';
+      });
       $timeout(_idle, 1000);
     };
     $scope.onSwipeRight = function() {
-      $scope.swipeAction = 'swipe right';
+      $scope.$apply(function() {
+        $scope.swipeAction = 'swipe right';
+      });
       $timeout(_idle, 1000);
     };
 

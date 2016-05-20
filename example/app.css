@@ -1,15 +1,23 @@
-.custom-swipe .option.right {
-  background-color: blue;
+.custom-template-right{
+  background-color: #FF6E40;
 }
 
-.custom-swipe .option.left  {
-  background-color: red;
+.custom-template-left{
+  background-color: #40C4FF;
 }
 
-.all-centered {
+.start {
   display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.end {
+  display: flex;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
   -webkit-align-items: center;
   align-items: center;
 }
