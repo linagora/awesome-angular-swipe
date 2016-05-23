@@ -29,7 +29,6 @@
 .swipe-wrapper .swipe-content.moving {
   transition: none;
   -webkit-transition: none;
-  background-color: #fff;
 }
 .swipe-wrapper .option {
   position: absolute;
