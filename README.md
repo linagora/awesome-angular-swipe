@@ -2,7 +2,7 @@
 
 This library uses $swipe and exposes a directive which allows mobile swipe feature on everything in the DOM.
 
-It works only for mobile device. It will do nothing on desktop (except using the dev tool to mock a mobile behavior).
+Please, take a look at our live [demo](http://linagora.github.io/awesome-angular-swipe/). It works only for mobile device. It will do nothing on desktop (except using the dev tool to mock a mobile behavior).
 
 # Usage
 
