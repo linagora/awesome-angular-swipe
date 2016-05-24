@@ -13,7 +13,8 @@ The directive *swipe* can be used as a class or as an attribute. Then inject cal
       Swipe me!
     </div>
 
-Note that *swipe-left* and *swipe-right* are functions, *left-template* and *right-template* are whatever templates you want, and *swipeable-color* is the color of the swipeable block (default value = '#fff')
+Note that *swipe-left* and *swipe-right* are functions, *left-template* and *right-template* are whatever templates you want.
+Note that the color of the swipeable block can be modified by overriding the following CSS property: *swipeable-color* (default value = '#fff'; the white color from the material design base colors).
 
 # Licence
 

@@ -30,6 +30,9 @@
   transition: none;
   -webkit-transition: none;
 }
+.swipe-wrapper .swipe-content.swipeable-color {
+  background-color: #fff;
+}
 .swipe-wrapper .option {
   position: absolute;
   display: none;
