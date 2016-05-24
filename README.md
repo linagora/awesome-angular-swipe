@@ -9,7 +9,7 @@ It works only for mobile device. It will do nothing on desktop (except using the
 You might want to take a look at the index.html file inside the *example* folder.
 The directive *swipe* can be used as a class or as an attribute. Then inject callbacks on right and left swipe, and template customization like so:
 
-    <div class="swipe" swipe-left="doSomething" swipe-right="doAnotherSomething" left-template="leftTemplate.html" right-template="rightTemplate.html" swipeable-color="#fff">
+    <div class="swipe" swipe-left="doSomething" swipe-right="doAnotherSomething" left-template="leftTemplate.html" right-template="rightTemplate.html">
       Swipe me!
     </div>
 
