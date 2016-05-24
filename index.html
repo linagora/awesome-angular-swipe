@@ -5,41 +5,59 @@
     <title>Awesome-angular-swipe by linagora</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link rel="stylesheet" href="dist/awesome-angular-swipe.min.css">
+    <link href="materialdesignicons.min.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-  <body>
-    <section class="page-header">
+  <body ng-app="swipe.example">
+    <section class="page-header" style="margin: 0;">
       <h1 class="project-name">Awesome-angular-swipe</h1>
-      <h2 class="project-tagline">This library uses $swipe then exposes a directive which allows mobile swipe feature on everything in the DOM.</h2>
+      <h2 class="project-tagline">This library leverages the built-in angular service $swipe so as to expose a directive which provide swipe feature for every element in the DOM.</h2>
       <a href="https://github.com/linagora/awesome-angular-swipe" class="btn">View on GitHub</a>
       <a href="https://github.com/linagora/awesome-angular-swipe/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/linagora/awesome-angular-swipe/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="awesome-angular-swipe" class="anchor" href="#awesome-angular-swipe" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>awesome-angular-swipe</h1>
+        <div/>
+        <div class="col-xs-12"  ng-controller="swipeCtrl">
+          <p>
+            Note that this works only using a mobile device, or using the developer tools of your
+            browser in mobile device mode.
+          </p>
+          <br/>
+          <div>
+            <div class="panel panel-default swipe" swipe-left="onSwipeLeft" swipe-right="onSwipeRight">
+              <div class="panel-body">
+                Swipe left or right this beautiful panel!
+              </div>
+            </div>
+            <p>
+              {{swipeAction}}
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <hr/>
+        </div>
+        <div class="col-xs-12" ng-controller="fancySwipeCtrl">
+          <div>
+            <div class="panel panel-default swipe" swipe-left="delayedClose" swipe-right="delayedClose" left-template="leftTemplate.html" right-template="rightTemplate.html">
+              <div class="panel-body">
+                Again with some template customization!
+              </div>
+            </div>
+          </div>
+        </div>
 
-<p>This library uses $swipe and exposes a directive which allows mobile swipe feature on everything in the DOM.</p>
-
-<p>It works only for mobile device. It will do nothing on desktop (except using the dev tool to mock a mobile behavior).</p>
-
-<h1>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
-
-<p>You might want to take a look at the index.html file inside the <em>example</em> folder.
-The directive <em>swipe</em> can be used as a class or as an attribute. Then inject callbacks on right and left swipe, and template customization like so:</p>
-
-<pre><code>&lt;div class="swipe" swipe-left="doSomething" swipe-right="doAnotherSomething" left-template="leftTemplate.html" right-template="rightTemplate.html"&gt;
-  Swipe me!
-&lt;/div&gt;
-</code></pre>
-
-<p>Note that <em>swipe-left</em> and <em>swipe-right</em> are functions, <em>left-template</em> and <em>right-template</em> are whatever templates you want.
-Note that the color of the swipeable block can be modified by overriding the following CSS property: <em>swipeable-color</em> (default value = '#fff'; the white color from the material design base colors).</p>
-
+        <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="./bower_components/angular/angular.min.js"></script>
+        <script src="./bower_components/angular-touch/angular-touch.min.js"></script>
+        <script src="./dist/awesome-angular-swipe.min.js"></script>
+        <script src="app.js"></script>
 <h1>
 <a id="licence" class="anchor" href="#licence" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licence</h1>
 
