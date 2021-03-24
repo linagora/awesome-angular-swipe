@@ -1,3 +1,5 @@
+![Archived](https://img.shields.io/badge/Current_Status-archived-blue?style=flat)
+
 # awesome-angular-swipe
 
 This library uses $swipe and exposes a directive which allows mobile swipe feature on everything in the DOM.
